@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blakc Goose Bistro</title>
+  </head>
+  <body>
+    <h1>The Black Goose Blog</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <h2>Contact Us - Reservation</h2>
+    <form id="myForm">
+      <table>
+        <tr>
+          <td>First Name:</td>
+          <td>
+            <input type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td>Time:</td>
+          <td><input type="time" /></td>
+        </tr>
+        <tr>
+          <td>No. of People:</td>
+          <td>
+            <input type="radio" id="one" name="numPpl" value="1" /><label for="one">1</label>
+            <input type="radio" id="two" name="numPpl" value="2" /><label for="two">2</label>
+            <input type="radio" id="three" name="numPpl" value="3" /><label for="three">3</label>
+            <input type="radio" id="four" name="numPpl" value="4" /><label for="four">4</label>
+            <input type="radio" id="five" name="numPpl" value="5" /><label for="five">5</label>
+            <input type="radio" id="size" name="numPpl" value="6" /><label for="size">6</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Purpose of Reservation:</td>
+          <td>
+            <select>
+              <option>None</option>
+              <option>IDK</option>
+              <option>FOR FUN</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Special Instructions:</td>
+          <td><textarea></textarea></td>
+        </tr>
+      </table>
+      <button type="submit">Send</button>
+    </form>
+    <script>
+      var form = document.getElementById("myForm");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        console.log(e);
+      });
+    </script>
+  </body>
+</html>
